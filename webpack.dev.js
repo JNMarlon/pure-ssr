@@ -25,9 +25,6 @@ module.exports = {
 
     resolve: {
         extensions: [ext.js, ext.jsx, ext.ts, ext.tsx],
-        alias: {
-            page: path.resolve('src/page/'),
-        },
     },
 
     plugins: [

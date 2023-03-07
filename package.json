@@ -13,6 +13,10 @@
     "precommit": "husky add .husky/pre-commit"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.0",
+    "@loadable/babel-plugin": "^5.15.3",
     "@loadable/webpack-plugin": "^5.15.2",
     "@types/loadable__component": "^5.13.4",
     "@types/react": "^18.0.28",
