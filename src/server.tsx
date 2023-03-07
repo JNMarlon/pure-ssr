@@ -7,7 +7,7 @@ import { store } from './store/store';
 import { StaticRouter } from 'react-router-dom/server';
 import { renderToString } from 'react-dom/server';
 import { Helmet } from 'react-helmet';
-
+//express rendering server
 const app = express();
 
 if (process.env.NODE_ENV !== 'production') {
