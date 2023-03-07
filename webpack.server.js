@@ -2,6 +2,7 @@ const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const { ext, loader } = require('./webpack.constant');
 
+//webpack config for server side rendering
 module.exports = {
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     target: 'node',
