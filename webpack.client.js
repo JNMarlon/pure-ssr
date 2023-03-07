@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
 const LoadablePlugin = require('@loadable/webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { loader, ex } = require('./webpack.constant');
+const { loader, ext } = require('./webpack.constant');
 
 const DEV_ENV = process.env.NODE_ENV === 'development';
 const hotMiddlewareScript = 'webpack-hot-middleware/client?name=web&path=/__webpack_hmr&timeout=20000&reload=true';
@@ -52,7 +52,7 @@ const getConfig = (target) => ({
     },
 
     resolve: {
-        extensions: [ex.js, ex.jsx, ex.ts, ex.tsx],
+        extensions: [ext.js, ext.jsx, ext.ts, ext.tsx],
         alias: {
             page: path.resolve('src/page/'),
         },

@@ -1,4 +1,4 @@
-export const ex = {
+export const ext = {
     js: '.js',
     jsx: '.jsx',
     ts: '.ts',

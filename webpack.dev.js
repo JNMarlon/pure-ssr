@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { ex, loader } = require('./webpack.constant');
+const { ext, loader } = require('./webpack.constant');
 
 module.exports = {
     mode: 'development',
@@ -24,7 +24,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: [ex.js, ex.jsx, ex.ts, ex.tsx],
+        extensions: [ext.js, ext.jsx, ext.ts, ext.tsx],
         alias: {
             page: path.resolve('src/page/'),
         },
