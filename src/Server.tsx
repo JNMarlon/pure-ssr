@@ -4,7 +4,7 @@ import path from 'path';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-import { StaticRouter } from 'react-router-dom';
+import { StaticRouter } from 'react-router-dom/server';
 import { renderToString } from 'react-dom/server';
 import { Helmet } from 'react-helmet';
 
