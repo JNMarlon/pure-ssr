@@ -37,7 +37,7 @@ app.get('*', (req, res) => {
 
     const jsx = webExtractor.collectChunks(
         <Provider store={store}>
-            <StaticRouter location={req.url} context={{}}>
+            <StaticRouter location={req.url}>
                 <App />
             </StaticRouter>
         </Provider>,
